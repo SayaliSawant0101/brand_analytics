@@ -78,7 +78,34 @@ st.markdown("""
     .finding-title { font-size: 13px; font-weight: 700; color: #4361ee; margin-bottom: 6px; }
     .finding-body  { font-size: 13px; color: #495057; line-height: 1.5; }
     #MainMenu {visibility: hidden;} footer {visibility: hidden;}
+    .watermark {
+        position: fixed;
+        bottom: 12px;
+        right: 16px;
+        font-size: 11px;
+        color: #9ca3af;
+        z-index: 9999;
+        font-family: sans-serif;
+        text-align: right;
+        line-height: 1.6;
+    }
+    .watermark a {
+        color: #9ca3af;
+        text-decoration: none;
+    }
+    .watermark a:hover {
+        color: #4361ee;
+    }
 </style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<div class="watermark">
+    Created by Sayali Sawant &nbsp;|&nbsp;
+    <a href="https://github.com/SayaliSawant0101/brand_analytics" target="_blank">GitHub</a>
+    &nbsp;|&nbsp;
+    <a href="https://sayalis.org" target="_blank">sayalis.org</a>
+</div>
 """, unsafe_allow_html=True)
 
 
